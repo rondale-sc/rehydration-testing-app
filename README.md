@@ -1,56 +1,23 @@
 # rehydration-testing-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a test of glimmer-vm's rehydration/serialization in an ember.js application:
 
-## Prerequisites
+The steps to try this out on your own are as follows:
 
-You will need the following things properly installed on your computer.
+- download the ember-source tarbal:
+  `curl https://github.com/rondale-sc/rehydration-testing-app/raw/master/ember-source-3.2.0-utilize-rehydration-serialization-from-glimmer.tgz -O`
+- link that to your ember-source in your application's package.json
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+  ```json
+    "ember-source": "./ember-source-3.2.0-utilize-rehydration-serialization-from-glimmer.tgz",
+  ```
+- list `ember-cli-fastboot` to your dependencies:
 
-## Installation
+  ```json
+  "dependencies": {
+    "ember-cli-fastboot": "github:rondale-sc/ember-cli-fastboot#utilize-rehydration-serialization-from-glimmer"
+  }
+  ```
+- start your application with `EXPERIMENTAL_RENDER_MODE_SERIALIZE=true ember s`
 
-* `git clone <repository-url>` this repository
-* `cd rehydration-testing-app`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+View your devtools network panel to ensure you have the glimmer-vm's serialization markings.  And ensure you have no script tags with the ids `fastboot-body-start` or `fastboot-body-end`.
