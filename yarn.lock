@@ -1938,8 +1938,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.30:
-  version "1.3.33"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.33.tgz#bf00703d62a7c65238136578c352d6c5c042a545"
+  version "1.3.34"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.34.tgz#d93498f40391bb0c16a603d8241b9951404157ed"
 
 ember-ajax@^3.0.0:
   version "3.0.0"
@@ -2000,9 +2000,9 @@ ember-cli-eslint@^4.2.1:
     rsvp "^4.6.1"
     walk-sync "^0.3.0"
 
-ember-cli-fastboot@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-fastboot/-/ember-cli-fastboot-1.1.3.tgz#2ca968beaefd6f45e021242b6fe9d74d213f5045"
+"ember-cli-fastboot@github:rondale-sc/ember-cli-fastboot#utilize-rehydration-serialization-from-glimmer":
+  version "1.1.2"
+  resolved "https://codeload.github.com/rondale-sc/ember-cli-fastboot/tar.gz/91483a14f2ca972ee4517ac98ea3bbc269b8dc71"
   dependencies:
     broccoli-concat "^3.2.2"
     broccoli-funnel "^2.0.0"
@@ -2013,7 +2013,7 @@ ember-cli-fastboot@^1.1.3:
     ember-cli-lodash-subset "2.0.1"
     ember-cli-preprocess-registry "^3.1.0"
     ember-cli-version-checker "^2.1.0"
-    fastboot "^1.1.3"
+    fastboot "github:rondale-sc/fastboot#utilize-rehydration-serialization-from-glimmer"
     fastboot-express-middleware "^1.1.0"
     fastboot-transform "^0.1.2"
     fs-extra "^4.0.2"
@@ -2840,9 +2840,22 @@ fastboot-transform@^0.1.2:
   dependencies:
     broccoli-stew "^1.5.0"
 
-fastboot@^1.1.2, fastboot@^1.1.3:
+fastboot@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/fastboot/-/fastboot-1.1.3.tgz#56c5f56415c5ae8de2db539c0d3ecbcd65538f8b"
+  dependencies:
+    chalk "^2.0.1"
+    cookie "^0.3.1"
+    debug "^3.0.0"
+    exists-sync "0.0.4"
+    najax "^1.0.2"
+    rsvp "^4.7.0"
+    simple-dom "^1.0.0"
+    source-map-support "^0.5.0"
+
+"fastboot@github:rondale-sc/fastboot#utilize-rehydration-serialization-from-glimmer":
+  version "1.1.3"
+  resolved "https://codeload.github.com/rondale-sc/fastboot/tar.gz/42eb240172e1934e11ece8026e9af2501cd68b28"
   dependencies:
     chalk "^2.0.1"
     cookie "^0.3.1"
