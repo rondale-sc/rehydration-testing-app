@@ -4,13 +4,12 @@ This is a test of glimmer-vm's rehydration/serialization in an ember.js applicat
 
 The steps to try this out on your own are as follows:
 
-- download the ember-source tarbal:
-  `curl https://github.com/rondale-sc/rehydration-testing-app/raw/master/ember-source-3.2.0-utilize-rehydration-serialization-from-glimmer.tgz -O`
-- link that to your ember-source in your application's package.json
+- Link to this tarbal of ember canary:
 
   ```json
-    "ember-source": "./ember-source-3.2.0-utilize-rehydration-serialization-from-glimmer.tgz",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/e0d4b3fba4fd9c5ae6d9c61f18055d99e1989265.tgz",
   ```
+
 - list `ember-cli-fastboot` to your dependencies:
 
   ```json

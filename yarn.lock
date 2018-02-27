@@ -2351,9 +2351,9 @@ ember-runtime-enumerable-includes-polyfill@^2.0.0:
     ember-cli-babel "^6.9.0"
     ember-cli-version-checker "^2.1.0"
 
-ember-source@./ember-source-3.2.0-utilize-rehydration-serialization-from-glimmer.tgz:
-  version "3.2.0-utilize-rehydration-serialization-from-glimmer"
-  resolved "./ember-source-3.2.0-utilize-rehydration-serialization-from-glimmer.tgz#26ec8b0f9424ae003d0d0eee561780bc389b2803"
+"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/e0d4b3fba4fd9c5ae6d9c61f18055d99e1989265.tgz":
+  version "3.2.0-canary"
+  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/e0d4b3fba4fd9c5ae6d9c61f18055d99e1989265.tgz#548fa5c432bb52e17f67bc2d1afac03ab886c49e"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
@@ -2840,20 +2840,7 @@ fastboot-transform@^0.1.2:
   dependencies:
     broccoli-stew "^1.5.0"
 
-fastboot@^1.1.2:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/fastboot/-/fastboot-1.1.3.tgz#56c5f56415c5ae8de2db539c0d3ecbcd65538f8b"
-  dependencies:
-    chalk "^2.0.1"
-    cookie "^0.3.1"
-    debug "^3.0.0"
-    exists-sync "0.0.4"
-    najax "^1.0.2"
-    rsvp "^4.7.0"
-    simple-dom "^1.0.0"
-    source-map-support "^0.5.0"
-
-"fastboot@github:rondale-sc/fastboot#utilize-rehydration-serialization-from-glimmer":
+fastboot@^1.1.2, "fastboot@github:rondale-sc/fastboot#utilize-rehydration-serialization-from-glimmer":
   version "1.1.3"
   resolved "https://codeload.github.com/rondale-sc/fastboot/tar.gz/42eb240172e1934e11ece8026e9af2501cd68b28"
   dependencies:
