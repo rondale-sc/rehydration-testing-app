@@ -14,7 +14,7 @@ The steps to try this out on your own are as follows:
 
   ```json
   "dependencies": {
-    "ember-cli-fastboot": "github:rondale-sc/ember-cli-fastboot#utilize-rehydration-serialization-from-glimmer"
+    "ember-cli-fastboot": "github:rondale-sc/ember-cli-fastboot#37d1f2176fe5ab1ca96870c9c65012f8a98f1552"
   }
   ```
 - start your application with `EXPERIMENTAL_RENDER_MODE_SERIALIZE=true ember s`
