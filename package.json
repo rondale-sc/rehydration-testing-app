@@ -24,6 +24,7 @@
     "ember-cli-babel": "^6.6.0",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
+    "ember-cli-fastboot": "^1.1.4-beta.1",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
@@ -36,15 +37,13 @@
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-resolver": "^4.0.0",
-    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/e0d4b3fba4fd9c5ae6d9c61f18055d99e1989265.tgz",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/462c33ff573a271edc4bcd907025e190d327f8a6.tgz",
     "ember-welcome-page": "^3.0.0",
     "eslint-plugin-ember": "^5.0.0",
+    "fastboot": "^1.1.4-beta.1",
     "loader.js": "^4.2.3"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
-  },
-  "dependencies": {
-    "ember-cli-fastboot": "github:rondale-sc/ember-cli-fastboot#37d1f2176fe5ab1ca96870c9c65012f8a98f1552"
   }
 }
